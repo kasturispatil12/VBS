@@ -17,6 +17,7 @@ public class HistoryController {
     HistoryRepo historyRepo;
 
     @GetMapping("/histories")
+    //used to store history
     public List<History> getHistory()
     {
         return historyRepo.findAll();
